@@ -1,0 +1,9 @@
+[pre-commit]
+parallel = true
+
+[prepare-commit-msg.commands.cz]
+run = "bun run cz --hook"
+interactive = true
+
+[pre-commit.commands.format]
+run = "bun run format"
